@@ -118,6 +118,22 @@
                 <version>3.0.0-M5</version>
             </plugin>
 
+             <plugin>
+  <groupId>org.codehaus.mojo</groupId>
+  <artifactId>cobertura-maven-plugin</artifactId>
+  <version>2.7</version>
+  <configuration>
+    <format>xml</format>
+  </configuration>
+  <executions>
+    <execution>
+      <goals>
+        <goal>cobertura</goal>
+      </goals>
+    </execution>
+  </executions>
+</plugin>    
+
             <!-- Maven Clean Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
